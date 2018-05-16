@@ -1,0 +1,104 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'tieshikeji'
+            keyPassword 'tieshikeji888'
+            storeFile file('D:/sign/tieshikeji.jks')
+            storePassword 'tieshikeji888'
+        }
+    }
+    compileSdkVersion 25
+    buildToolsVersion '26.0.2'
+    dexOptions {
+        jumboMode true
+    }
+    compileSdkVersion 25
+    defaultConfig {
+        applicationId "com.test720.www.naneducationteacher"
+        minSdkVersion 18
+        targetSdkVersion 22
+        versionCode 3
+        versionName "1.2"
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        ndk {
+            //设置支持的SO库架构（开发者可以根据需要，选择一个或多个平台的so）
+            abiFilters "armeabi-v7a"
+        }
+        signingConfig signingConfigs.config
+    }
+    useLibrary 'org.apache.http.legacy'
+    buildTypes {
+        release {
+            minifyEnabled false
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+        debug {
+            debuggable true
+            signingConfig signingConfigs.config
+        }
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+    sourceSets {
+        main {
+            assets.srcDirs = ['src/main/assets', 'src/main/assets/']
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+    productFlavors {
+    }
+}
+repositories {
+    flatDir {
+        dirs '../ClassRoomSdk/libs', 'libs'
+    }
+}
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    //noinspection GradleCompatible
+    compile files('libs/fastjson-1.1.34.android.jar')
+    compile files('libs/universal-image-loader-1.9.4.jar')
+    //网络请求库
+    //recycle`s adapter
+    //动态权限
+    compile project(':eduhdsdk')
+    compile(name: 'classroomsdk-release', ext: 'aar')
+    compile files('libs/hockeysdk-android.jar')
+    compile files('libs/umeng_social_api.jar')
+    compile files('libs/SocialSDK_WeChat_Simplify.jar')
+    compile files('libs/SocialSDK_QQ_Simplify.jar')
+    compile files('libs/umeng_social_tool.jar')
+    compile files('libs/umeng_social_net.jar')
+    compile files('libs/open_sdk_r5788_lite.jar')
+    compile files('libs/SocialSDK_QQ_Full.jar')
+    compile 'com.android.support.test:runner:0.5'
+    compile 'com.android.support.test.espresso:espresso-core:2.2.2'
+    compile 'com.github.bumptech.glide:glide:3.5.2'
+    compile 'com.jakewharton:butterknife:8.4.0'
+    compile 'com.jakewharton:butterknife-compiler:8.4.0'
+    compile 'com.apkfuns.logutils:library:1.5.1.1'
+    compile 'com.contrarywind:Android-PickerView:3.2.6'
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support:design:25.3.1'
+    compile 'com.lzy.widget:imagepicker:0.5.5'
+    compile 'com.lcodecorex:tkrefreshlayout:1.0.7'
+    compile 'com.kyleduo.switchbutton:library:1.4.6'
+    compile 'com.github.arcadefire:nice-spinner:1.3.1'
+    compile 'com.android.support:multidex:1.0.0'
+    compile 'com.lzy.net:okgo:2.1.4'
+    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.22'
+    compile 'com.yanzhenjie:permission:1.1.2'
+    compile 'com.bigkoo:convenientbanner:2.0.5'
+    compile 'com.thetransactioncompany:jsonrpc2-base:1.38'
+    compile 'org.java-websocket:Java-WebSocket:1.3.0'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.flyco.dialog:FlycoDialog_Lib:1.3.2@aar'
+    testCompile 'junit:junit:4.12'
+}

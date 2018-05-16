@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="50dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:orientation="vertical"
+                        android:paddingBottom="10dp">
+
+                        <ImageView
+                            android:id="@+id/descriptionImage"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/x320"
+                            android:scaleType="fitXY"
+                            android:src="@color/base_color" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp">
+
+                            <com.test720.www.naneducationteacher.view.CircleImageView
+                                android:id="@+id/teacherPhoto"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:src="@mipmap/icon_head_portrait" />
+
+                            <TextView
+                                android:id="@+id/teacherName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_toRightOf="@+id/teacherPhoto"
+                                android:maxLength="20"
+                                android:textColor="@color/black"
+                                tools:text="范美忠" />
+
+                            <TextView
+                                android:id="@+id/cousePrices"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignLeft="@+id/teacherName"
+                                android:layout_below="@+id/teacherName"
+                                android:layout_marginTop="5dp"
+                                android:layout_toRightOf="@+id/teacherPhoto"
+                                android:drawableLeft="@mipmap/jiage"
+                                android:text="10:00" />
+
+                            <TextView
+
+                                android:id="@+id/BaoMingCount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:drawableLeft="@mipmap/wodewuse"
+                                tools:text="报名人数：108人" />
+
+                            <TextView
+                                android:id="@+id/courseDonation"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_below="@+id/BaoMingCount"
+                                android:layout_marginTop="5dp"
+                                android:textColor="@color/base_color"
+                                tools:text="蒙牛赞助1元 伊利赞助0.5元" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/gray_line" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="课程描述"
+                            android:textColor="@color/base_color"
+                            android:textSize="17sp" />
+
+                        <TextView
+                            android:id="@+id/courseDescription"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            tools:text="鲲鹏展翅九万里。扶摇直上九重天。庄子的这句话，一万人读就有一万种理解." />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="讲师介绍"
+                            android:textColor="@color/base_color"
+                            android:textSize="17sp" />
+
+                        <TextView
+                            android:id="@+id/teacherDescripition"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            tools:text="范美忠，毕业于北京师范大学历史系，长期任职于基础教育领域，对中文科教育有独到的简见解和研究。" />
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:background="@color/system_color" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:orientation="vertical"
+                        android:paddingBottom="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="开课时间"
+                            android:textColor="@color/base_color"
+                            android:textSize="17sp" />
+
+                        <TextView
+                            android:id="@+id/courseOnTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            tools:text="2018-09-28 20:00" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="课程时长"
+                            android:textColor="@color/base_color"
+                            android:textSize="17sp" />
+
+                        <TextView
+                            android:id="@+id/courseTimeLength"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            tools:text="1小时" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="课程分类"
+                            android:textColor="@color/base_color"
+                            android:textSize="17sp" />
+
+                        <TextView
+                            android:id="@+id/coureSortKind"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            tools:text="语文" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="适应人群"
+                            android:textColor="@color/base_color"
+                            android:textSize="17sp" />
+
+                        <TextView
+                            android:id="@+id/CourseCanStudyMan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            tools:text="5-12岁" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:background="@color/system_color" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/system_color"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/signUpCount"
+            android:layout_width="@dimen/x300"
+            android:layout_height="@dimen/x80"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/x40"
+            android:layout_marginRight="@dimen/x30"
+            android:layout_weight="1"
+            android:background="@color/base_color"
+            android:gravity="center"
+            android:text="报名人数：108"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/startClassOrWatchVideo"
+            android:layout_width="@dimen/x300"
+            android:layout_height="@dimen/x80"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_marginRight="@dimen/x40"
+            android:layout_weight="1"
+            android:background="@color/base_color"
+            android:gravity="center"
+            android:text="上课"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+    </LinearLayout>
+</RelativeLayout>

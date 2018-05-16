@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.test720.www.naneducationteacher.login.LoginActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/LOGO"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x333"
+                android:src="@color/base_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/LOGO"
+                android:layout_marginTop="@dimen/x50"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x100"
+                    android:layout_marginLeft="@dimen/x30"
+                    android:layout_marginRight="@dimen/x30"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:id="@+id/Phone"
+                        android:layout_width="@dimen/x25"
+                        android:layout_height="@dimen/x50"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/shouji" />
+
+                    <EditText
+                        android:id="@+id/PhoneNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/x30"
+                        android:layout_toRightOf="@+id/Phone"
+                        android:background="@null"
+                        android:ems="10"
+                        android:hint="请输入手机号"
+                        android:inputType="phone"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/x30"
+                    android:layout_marginRight="@dimen/x30"
+                    android:background="@color/gray_line" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x100"
+                    android:layout_marginLeft="@dimen/x30"
+                    android:layout_marginRight="@dimen/x30"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:id="@+id/pwd"
+                        android:layout_width="@dimen/x25"
+                        android:layout_height="@dimen/x50"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/mima" />
+
+                    <EditText
+                        android:id="@+id/password"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/x30"
+                        android:layout_toRightOf="@+id/pwd"
+                        android:background="@null"
+                        android:ems="10"
+                        android:hint="请输入密码"
+                        android:inputType="textPassword"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/x30"
+                    android:layout_marginRight="@dimen/x30"
+                    android:background="@color/gray_line" />
+
+                <Button
+                    android:id="@+id/Login"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x88"
+                    android:layout_marginLeft="@dimen/x30"
+                    android:layout_marginRight="@dimen/x30"
+                    android:layout_marginTop="@dimen/x150"
+                    android:background="@drawable/all_corners_base_color"
+                    android:text="登录"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

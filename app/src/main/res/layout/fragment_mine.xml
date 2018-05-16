@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#E6EEF1"
+              android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x300"
+                android:background="@mipmap/personal_background">
+
+                <com.test720.www.naneducationteacher.view.CircleImageView
+                    android:id="@+id/user_head"
+                    android:layout_width="@dimen/x120"
+                    android:layout_height="@dimen/x120"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/x36"
+                    android:src="@mipmap/touxiang"/>
+
+                <TextView
+                    android:id="@+id/userNickName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/x30"
+                    android:layout_toRightOf="@+id/user_head"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="15sp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/wallet"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x90"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/x36"
+                    android:drawableLeft="@mipmap/qianbao"
+                    android:drawablePadding="@dimen/x20"
+                    android:text="钱包"
+                    android:textColor="@color/black"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/x36"
+                    android:src="@mipmap/personal_fanhui_ash"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:layout_marginLeft="@dimen/x36"
+                android:background="@color/gray_line"/>
+
+            <RelativeLayout
+                android:id="@+id/liveBroadCast"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x90"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/x36"
+                    android:drawableLeft="@mipmap/zhibo"
+                    android:drawablePadding="@dimen/x20"
+                    android:text="直播"
+                    android:textColor="@color/black"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/x36"
+                    android:src="@mipmap/personal_fanhui_ash"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:layout_marginLeft="@dimen/x36"
+                android:background="@color/gray_line"/>
+
+            <RelativeLayout
+                android:id="@+id/videoCache"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x90"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/x36"
+                    android:drawableLeft="@mipmap/lubo"
+                    android:drawablePadding="@dimen/x20"
+                    android:text="录播"
+                    android:textColor="@color/black"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/x36"
+                    android:src="@mipmap/personal_fanhui_ash"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:layout_marginLeft="@dimen/x36"
+                android:background="@color/gray_line"/>
+
+            <RelativeLayout
+                android:id="@+id/advicesFeedBack"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x90"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/x36"
+                    android:drawableLeft="@mipmap/yijian"
+                    android:drawablePadding="@dimen/x20"
+                    android:text="意见反馈"
+                    android:textColor="@color/black"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/x36"
+                    android:src="@mipmap/personal_fanhui_ash"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:layout_marginLeft="@dimen/x36"
+                android:background="@color/gray_line"/>
+
+            <RelativeLayout
+                android:id="@+id/contactUs"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x90"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/x36"
+                    android:drawableLeft="@mipmap/lianxiwom"
+                    android:drawablePadding="@dimen/x20"
+                    android:text="联系我们"
+                    android:textColor="@color/black"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/x36"
+                    android:src="@mipmap/personal_fanhui_ash"/>
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/check_out"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x80"
+                android:layout_marginLeft="@dimen/x36"
+                android:layout_marginRight="@dimen/x36"
+                android:layout_marginTop="@dimen/x65"
+                android:background="@drawable/all_corners_base_color"
+                android:text="退出登录"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

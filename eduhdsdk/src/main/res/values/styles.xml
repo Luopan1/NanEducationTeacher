@@ -1,0 +1,9 @@
+<resources>
+
+    //黑屏问题
+    <style name="activityVoipVideoTransparentTheme" parent="@android:style/Theme.Black.NoTitleBar">
+        <item name="android:windowBackground">@color/window_back_black</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+</resources>

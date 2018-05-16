@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:background="@color/white"
+    android:minWidth="@dimen/x330"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/x25">
+
+    <RelativeLayout
+        android:id="@+id/imageRelative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/courseImage"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x215"
+            android:scaleType="fitXY"
+            android:src="@color/base_color" />
+
+        <TextView
+            android:id="@+id/courseKind"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/x40"
+            android:background="@color/shallow_blue"
+            android:gravity="center"
+            android:text="预告"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/studyCourseName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageRelative"
+        android:layout_marginTop="10dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        tools:text="1111111" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/imageRelative"
+        android:layout_below="@+id/studyCourseName"
+        android:layout_marginTop="5dp">
+
+        <com.test720.www.naneducationteacher.view.CircleImageView
+            android:id="@+id/teacherPhoto"
+            android:layout_width="@dimen/x60"
+            android:layout_height="@dimen/x60"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/teacherName"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/x45"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/teacherPhoto"
+            android:textColor="#2F2F2F"
+            android:textSize="16sp"
+            tools:text="杨子建" />
+
+        <TextView
+            android:maxEms="5"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:id="@+id/money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@mipmap/jiage"
+            android:textColor="#4295CB"
+            tools:text="10.000000000" />
+    </RelativeLayout>
+</RelativeLayout>

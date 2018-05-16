@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.test720.www.naneducationteacher.mineactivity.MyAdvicesFeedBack">
+
+    <EditText
+        android:id="@+id/advices"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x400"
+        android:layout_margin="@dimen/x30"
+        android:background="@color/white"
+        android:gravity="top"
+        android:hint="写下对我们平台的意见或者建议吧~"
+        android:padding="@dimen/x10"
+        android:textColorHint="@color/black"/>
+
+
+    <Button
+        android:id="@+id/sendFeedBack"
+        android:layout_width="@dimen/x416"
+        android:layout_height="@dimen/x80"
+        android:layout_below="@+id/advices"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/x30"
+        android:background="@drawable/all_corners5_base"
+        android:text="发送"
+        android:textColor="@color/white"/>
+</RelativeLayout>

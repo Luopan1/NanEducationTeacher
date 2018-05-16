@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6EEF1">
+
+
+    <com.bigkoo.convenientbanner.ConvenientBanner
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x400"/>
+
+
+    <Button
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="100dp"
+        android:id="@+id/createLiveBroadCast"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x118"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/all_corners5_base"
+        android:drawablePadding="-100dp"
+        android:text="创建直播 +"
+        android:textColor="@color/white"
+        android:textSize="20sp"/>
+</RelativeLayout>
